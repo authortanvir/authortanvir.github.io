@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammad Tanvir Hossain</title>
+    <!-- Google Fonts for Bengali -->
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #7b2cbf;
+            --primary-hover: #5a189a;
+            --text-color: #2b2d42;
+            --bg-color: #ffffff;
+            --card-bg: #f8f9fa;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Hind Siliguri', sans-serif;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            line-height: 1.8;
+        }
+
+        /* Header / Navbar */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            background-color: #fff;
+            border-bottom: 1px solid #eaeaea;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .menu-icon {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            cursor: pointer;
+        }
+
+        /* Container */
+        .container {
+            max-width: 650px;
+            margin: 0 auto;
+            padding: 25px 20px;
+        }
+
+        /* Hero Section */
+        .hero {
+            margin-bottom: 30px;
+        }
+
+        .hero h1 {
+            font-size: 2.2rem;
+            color: var(--primary-color);
+            margin-bottom: 5px;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .hero p.tagline {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #555;
+            margin-bottom: 25px;
+        }
+
+        .profile-img-container {
+            width: 100%;
+            margin-bottom: 35px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        .profile-img-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+        }
+
+        /* Story Section */
+        .section-title {
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            font-weight: 700;
+            border-bottom: 2px solid #f0e6ff;
+            padding-bottom: 5px;
+        }
+
+        .content-p {
+            font-size: 1.1rem;
+            margin-bottom: 18px;
+            color: #333;
+            text-align: justify;
+        }
+
+        .info-box {
+            background-color: var(--card-bg);
+            border-left: 4px solid var(--primary-color);
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .info-box p {
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+
+        /* Buttons */
+        .btn-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 20px 0 35px 0;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: #fff;
+            padding: 10px 22px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 600;
+            transition: background 0.3s;
+            text-align: center;
+            border: none;
+        }
+
+        .btn:hover {
+            background-color: var(--primary-hover);
+        }
+
+        .btn-secondary {
+            background-color: #4a148c;
+        }
+
+        .btn-full {
+            display: block;
+            width: 100%;
+            padding: 14px;
+            font-size: 1.1rem;
+            margin-top: 15px;
+        }
+
+        /* Featured Book / Project Section */
+        .project-card {
+            background: #fff;
+            border: 1px solid #e0d5f5;
+            border-radius: 10px;
+            padding: 25px;
+            margin-top: 20px;
+            box-shadow: 0 4px 12px rgba(123, 44, 191, 0.05);
+        }
+
+        .book-badge {
+            display: inline-block;
+            background-color: #f0e6ff;
+            color: var(--primary-color);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .project-card h3 {
+            font-size: 1.6rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 25px 20px;
+            font-size: 0.95rem;
+            color: #666;
+            border-top: 1px solid #eee;
+            margin-top: 40px;
+        }
+
+        .scroll-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: var(--primary-color);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 1.2rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="logo">MOHAMMAD TANVIR HOSSAIN</div>
+        <div class="menu-icon">☰</div>
+    </header>
+
+    <div class="container">
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1>MOHAMMAD TANVIR HOSSAIN</h1>
+            <p class="tagline">Student | Author | Computer Trainer | Graphic Designer | Storyteller</p>
+            
+            <div class="profile-img-container">
+                <!-- আপনার প্রোফাইল ছবির ফাইল নাম 'profile.jpg' দিয়ে পরিবর্তন করতে পারেন -->
+                <img src="profile.jpg" alt="Mohammad Tanvir Hossain">
+            </div>
+        </section>
+
+        <!-- Story / Bio Section -->
+        <section>
+            <h2 class="section-title">MY STORY</h2>
+            
+            <p class="content-p">
+               আমি <strong>মোহাম্মদ তানভীর হোসেন</strong>—একজন শিক্ষার্থী, লেখক, কম্পিউটার প্রশিক্ষক, গ্রাফিক ডিজাইনার এবং গল্পকার (Storyteller)। আমার জন্ম কুমিল্লায়। পারিবারিক শিকড় খাগড়াছড়িতে হলেও আমার শৈশব, বেড়ে ওঠা এবং বর্তমান বসবাস কুমিল্লাতেই। বর্তমানে আমি জাতীয় বিশ্ববিদ্যালয়ের অধীনে খাগড়াছড়ি সরকারি কলেজে ব্যবস্থাপনা (BBA) বিষয়ে অধ্যয়নরত।
+            </p>
+
+            <p class="content-p">
+                পড়াশোনার পাশাপাশি প্রযুক্তি, সৃজনশীলতা এবং লেখালেখির মাধ্যমে নিজেকে প্রতিনিয়ত সমৃদ্ধ করার চেষ্টা করি। নতুন কিছু শেখা, ভাবা এবং সেই ভাবনাগুলোকে শব্দের মাধ্যমে মানুষের কাছে পৌঁছে দেওয়াই আমার সবচেয়ে বড় আনন্দ।
+            </p>
+
+            <p class="content-p">
+                আমি বিশ্বাস করি, প্রতিটি মানুষের জীবনই একটি গল্প, আর প্রতিটি মানুষের মধ্যেই অসীম সম্ভাবনা লুকিয়ে আছে। সেই বিশ্বাস থেকেই আত্মউন্নয়ন, ইতিবাচক চিন্তাভাবনা, ভালোবাসা, অনুভূতি এবং জীবনের বাস্তবতাকে লেখার মাধ্যমে পাঠকদের সামনে তুলে ধরার চেষ্টা করি।
+            </p>
+
+            <p class="content-p">
+                আমার লেখার লক্ষ্য শুধু গল্প বলা নয়; বরং এমন কিছু লেখা উপহার দেওয়া, যা পাঠককে নতুনভাবে ভাবতে শেখায়, নিজের শক্তি ও সামর্থ্য সম্পর্কে সচেতন করে, আত্মবিশ্বাস গড়ে তুলতে সহায়তা করে এবং জীবনের পথে এগিয়ে যাওয়ার সাহস জোগায়।
+            </p>
+
+            <div class="info-box">
+                <p>📌 <strong>জন্ম:</strong> ২৪ অক্টোবর ২০০৭, কুমিল্লা</p>
+                <p>📌 <strong>পারিবারিক নিবাস:</strong> খাগড়াছড়ি, বাংলাদেশ</p>
+            </div>
+
+            <!-- Social / Messenger Buttons -->
+            <div class="btn-group">
+                <a href="https://m.me/mdtanvir1615" target="_blank" class="btn">Messenger</a>
+                <a href="https://facebook.com/mdtanvir1615" target="_blank" class="btn btn-secondary">Facebook Profile</a>
+                <a href="https://facebook.com/authortanvir" target="_blank" class="btn btn-secondary">Facebook Page</a>
+            </div>
+        </section>
+
+        <!-- Projects & Books Section -->
+    <section style="margin-top: 40px;">
+        <h2 class="section-title">BOOKS & PROJECTS</h2>
+
+        <!-- প্রথম বই: তোমার মাঝেই সম্ভাবনা -->
+        <div class="project-card">
+            <span class="book-badge">📚 Published Book</span>
+
+            <div style="text-align: center; margin-top: 15px; margin-bottom: 20px;">
+                <img src="book-cover.jpg" alt="তোমার মাঝেই সম্ভাবনা" style="max-width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+            </div>
+
+            <h3>তোমার মাঝেই সম্ভাবনা</h3>
+
+            <p class="content-p">
+                "তোমার মাঝেই সম্ভাবনা" আমার প্রথম অনুপ্রেরণামূলক গ্রন্থ। এই বইয়ের মাধ্যমে আমি পাঠকদের নিজেদের ভেতরের শক্তি ও সম্ভাবনাকে আবিষ্কার করতে, আত্মবিশ্বাস গড়ে তুলতে এবং দৃঢ় সংকল্প নিয়ে জীবনের লক্ষ্য অর্জনের পথে এগিয়ে যেতে উৎসাহিত করতে চাই।
+            </p>
+
+            <a href="https://facebook.com/authortanvir" target="_blank" class="btn btn-full">বইটি সংগ্রহ করতে বা যোগাযোগ করতে ক্লিক করুন</a>
+        </div>
+
+
+        <!-- দ্বিতীয় বই: প্রেমের পরশ -->
+        <div class="project-card" style="margin-top: 30px;">
+            <span class="book-badge">📚 Published Book</span>
+
+            <div style="text-align: center; margin-top: 15px; margin-bottom: 20px;">
+                <img src="book-cover2.jpg" alt="প্রেমের পরশ" style="max-width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+            </div>
+
+            <h3>প্রেমের পরশ</h3>
+
+            <p class="content-p">
+                কখনো একটি সাধারণ পরিচয়ই বদলে দেয় দুটি মানুষের পুরো জীবন। "প্রেমের পরশ" তেমনই এক হৃদয়ছোঁয়া বাস্তব জীবননির্ভর রোমান্টিক উপন্যাস, যেখানে একটি সাধারণ পরিচয় ধীরে ধীরে রূপ নেয় গভীর বন্ধুত্বে, আর সেই বন্ধুত্ব একসময় ভালোবাসার সবচেয়ে সুন্দর অনুভূতিতে পরিণত হয়। কিন্তু জীবন সব সময় হৃদয়ের ইচ্ছেমতো এগোয় না। সময়, দূরত্ব, অভিমান, সমাজ ও বাস্তবতার কঠিন পরীক্ষায় তাদের সম্পর্ক বারবার নতুন মোড় নেয়। শেষ পর্যন্ত কি ভালোবাসা তার প্রাপ্য গন্তব্য খুঁজে পাবে, নাকি কিছু সম্পর্ক শুধু হৃদয়ের গভীরেই বেঁচে থাকে? সেই উত্তর লুকিয়ে আছে "প্রেমের পরশ"-এর প্রতিটি পাতায়।
+            </p>
+
+            <a href="https://facebook.com/authortanvir" target="_blank" class="btn btn-full">বইটি সংগ্রহ করতে বা যোগাযোগ করতে ক্লিক করুন</a>
+        </div>
+
+    </section>
+</div>
+
+    <!-- Scroll To Top Button -->
+    <a href="#" class="scroll-top">▲</a>
+
+    <footer>
+        <p>© 2026 Mohammad Tanvir Hossain. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
